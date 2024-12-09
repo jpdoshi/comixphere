@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bg-color: #000;
+  --tx-color: #fafafa;
+}
+
+body {
+  width: 100vw !important;
+  background-color: var(--bg-color);
+  color: var(--tx-color);
+}
