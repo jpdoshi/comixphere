@@ -1,15 +1,14 @@
 import React from 'react'
-import { motion } from 'framer-motion'
+
+import AppBar from './components/AppBar'
+import Home from './components/Home'
 
 const App = () => {
   return (
-    <motion.h1
-      whileHover={{
-        y: -4
-      }}
-    >
-      Comixphere
-    </motion.h1>
+    <>
+      <AppBar />
+      <Home />
+    </>
   )
 }
 

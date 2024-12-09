@@ -5,13 +5,71 @@
   scroll-behavior: smooth;
 }
 
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/Inter.ttf');
+  font-display: swap;
+}
+
 :root {
   --bg-color: #000;
   --tx-color: #fafafa;
+  --primary: #e53935;
 }
 
 body {
   width: 100vw !important;
   background-color: var(--bg-color);
   color: var(--tx-color);
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Inter';
+  font-weight: normal;
+}
+
+a {
+  color: var(--tx-color);
+  text-decoration: none;
+}
+
+.app-bar {
+  position: fixed;
+  height: 100vh;
+  width: 64px;
+  font-size: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  height: 64px;
+  width: 64px;
+  position: relative;
+  transition: 300ms ease;
+}
+
+.nav-item a i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 300ms ease;
+}
+
+.nav-item:hover {
+  background-color: var(--tx-color);
+}
+
+.nav-item:hover a i {
+  color: var(--bg-color);
+}
+
+.page {
+  padding-left: calc(64px + 12px);
+  padding-top: 12px;
 }
